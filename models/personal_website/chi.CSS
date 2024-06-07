@@ -1,0 +1,126 @@
+body
+{
+    display: flex;
+    min-height: 100vh; /* 將body設為至少和視窗高度相同 */
+    flex-direction: column; /* 將子元素垂直排列 */
+    background-color:#A3CEF1;
+    margin:0;
+    padding:0;
+}
+  
+ header
+ {
+    display: flex;
+    align-items: center; /* 將子元素垂直置中 */
+    justify-content: center; /* 將子元素水平置中 */
+    height: 90px;
+    font-size: 50px;
+    font-family:Comic Sans MS;
+    font-weight: bold;
+    color:#f0f0f0;
+    background-color:#4286b3;
+}
+
+nav
+{
+    font-size: 18px;
+    font-family:Comic Sans MS;
+    background-color:#a0a19f;
+}
+.navigator
+{
+    display: flex; /* 改為水平排列 */
+    margin:0; /*為了消除list前面的空間*/
+    padding:0; /*同上，為了消除list前面的空間*/
+    
+    
+}
+nav ul li
+{
+    list-style-type: none; /* 消除list前面的圓點 */
+    flex:1;
+    text-align:center;
+
+}
+nav ul li a /* 修改超連結樣式 */
+{
+    display: block;
+    padding-top:8px;
+    padding-bottom:8px;
+    width:100%;
+    height:100%;
+    text-decoration:none; /* 去除底線 */
+    color:#000000;
+}
+nav ul li a:hover /*僅超連結的空間會改變樣式，因此要把超連結空間填滿*/
+{
+    color:aliceblue;
+    background-color:#274C77;
+    display: block;
+}
+
+.dropdown
+{
+    flex:1;
+    margin:0;
+    padding:0;
+}
+.dropdown:hover .dropdownmenu
+{
+    display:block;
+    background-color:#a0a19f;
+}
+.dropdownmenu {
+    width: 20%; /* 預設寬度 */
+    min-width: 200px; /* 最小寬度 */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+
+  }
+
+
+main
+{
+    background-color:#E7ECEF;
+    display:flex;
+}
+.photo_frame
+{
+    width:30%;
+    margin-left:3%;
+    margin-right:3%;
+    margin-top: 2%;
+}
+.photo_org
+{
+    width:100%;
+    height:auto; /*自動調整*/
+}
+.intro
+{  
+    width:60%;
+    margin-left:3%;
+    margin-right:3%;
+}
+.main_title
+{
+    font-size: 35px;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+}
+.main_cont
+{
+    font-size: 20px;
+    font-family: Comic Sans MS;
+}
+
+footer
+{
+    text-align: center;
+    background-color:#a0a19f;
+}
